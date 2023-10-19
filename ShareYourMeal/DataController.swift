@@ -14,11 +14,7 @@ enum LoadState {
 @Observable
 class DataController {
     //can't modify it directly, only read from it. To change it we add a dedicated option just to set this thing (hence private set.)
-    private(set) var selectedFoodbank: Foodbank? {
-        didSet {
-            save()
-        }
-    }
+    private(set) var selectedFoodbank: Foodbank?
     //where we want to write the file on disk
     private let savePath = URL.documentsDirectory.appending(path: "SelectedFoodBank")
     
@@ -63,5 +59,6 @@ class DataController {
     //to change selectedFoodbank they can't just overwrite it, they must call this function automatically.
     func select(_ foodbank: Foodbank?) {
         selectedFoodbank = foodbank
+        save()
     }
 }
