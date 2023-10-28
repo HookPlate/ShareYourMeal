@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(DataController.self) var dataController
+    var foodBank: Foodbank
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                Section("\(foodBank.name) foodbank needs...") {
+                    ForEach(foodBank.neededItems, id: \.self) { item in
+                        Text(item)
+                        
+                    }
+                }
+            }
+            .navigationTitle("Share your Meal")
+            .toolbar {
+                Button("Change Location") {
+                    withAnimation {
+                        //clear their selection and in doing so bring up the original
+                        dataController.select(nil)
+                    }
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(foodBank: .example)
 }

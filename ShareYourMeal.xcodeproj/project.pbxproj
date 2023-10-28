@@ -15,6 +15,7 @@
 		5466E8132ADD4BBF009C9396 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5466E8122ADD4BBF009C9396 /* DataController.swift */; };
 		5466E8152ADE9FFE009C9396 /* EnterLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5466E8142ADE9FFE009C9396 /* EnterLocationView.swift */; };
 		5466E8172ADEA18E009C9396 /* SelectFoodbankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5466E8162ADEA18E009C9396 /* SelectFoodbankView.swift */; };
+		54A8B9E52AEC060100C1CA1B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8B9E42AEC060100C1CA1B /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5466E8122ADD4BBF009C9396 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		5466E8142ADE9FFE009C9396 /* EnterLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterLocationView.swift; sourceTree = "<group>"; };
 		5466E8162ADEA18E009C9396 /* SelectFoodbankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodbankView.swift; sourceTree = "<group>"; };
+		54A8B9E42AEC060100C1CA1B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		5466E8012ADD49D9009C9396 /* ShareYourMeal */ = {
 			isa = PBXGroup;
 			children = (
+				54A8B9E42AEC060100C1CA1B /* HomeView.swift */,
 				5466E8022ADD49D9009C9396 /* ShareYourMealApp.swift */,
 				5466E8142ADE9FFE009C9396 /* EnterLocationView.swift */,
 				5466E8162ADEA18E009C9396 /* SelectFoodbankView.swift */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5466E8052ADD49D9009C9396 /* ContentView.swift in Sources */,
+				54A8B9E52AEC060100C1CA1B /* HomeView.swift in Sources */,
 				5466E8132ADD4BBF009C9396 /* DataController.swift in Sources */,
 				5466E8032ADD49D9009C9396 /* ShareYourMealApp.swift in Sources */,
 				5466E8112ADD4A1E009C9396 /* Foodbank.swift in Sources */,
